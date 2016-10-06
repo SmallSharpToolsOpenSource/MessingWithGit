@@ -41,3 +41,18 @@ Specifically the following command adds the alternate remote.
 
 `git remote add dev git@github.com:brennanMKE/MessingWithGit.git`
 
+## Using Multiple Remotes
+
+Fetching from all remotes can be done with the `--all` switch for the `fetch` command. Each remote will be fetched to sync the local repository. Fetching does not change the working folder as a pull does.
+
+```
+ > git fetch --all
+Fetching origin
+Fetching dev
+```
+
+Pushing can be done to a specific remote and branch with the following commands.
+
+`git push remote origin master`
+
+`git push remote dev feature-1`
